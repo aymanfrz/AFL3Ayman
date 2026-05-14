@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ayman's Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-[#fefefe] text-black flex flex-col min-h-screen">
+
+    <nav class="bg-[#4a4a4a] text-white p-5 flex justify-center sticky top-0 z-50">
+        <ul class="flex space-x-6">
+            <li><a href="index.html" class="hover:text-white-600">Home</a></li>
+            <li><a href="hobby.html" class="hover:text-white-600">Hobby</a></li>
+            <li><a href="gallery.html" class="hover:text-white-600">Photo Gallery</a></li>
+        </ul>
+    </nav>
+
+    <div class="mt-8 flex flex-col items-center">
+        <img id="profilePhoto" src="AARF.png" alt="Ayman's Logo"
+            class="w-60 h-60 object-cover rounded-full border-4 border-white shadow-lg cursor-pointer transition transform hover:scale-105 hover:shadow-2xl" />
+        <div class="mt-4 text-xl font-semibold text-black">Achmad Ayman Rasjid Fahrezi</div>
+    </div>
+
+    <main class="flex-grow max-w-5xl mx-auto px-6 py-10 bg-[#d5c2bd] rounded-xl shadow-lg text-black mt-12 mb-8">
+        <section>
+            <h2 class="text-3xl font-semibold mb-6 border-b-2 border-black pb-2">Description</h2>
+            <p class="mb-4">
+                Hello!
+            </p>
+            <p>
+                My name is Achmad Ayman Rasjid Fahrezi, but you can call me <strong>Ayman</strong>
+                and this is my website! In this website, you can find 
+                what I like to be having fun and is considered to be my Hobby
+            </p>
+        </section>
+    </main>
+
+    <footer class="bg-[#4a4a4a] text-white py-8 px-10 mt-12 flex justify-end items-center space-x-4">
+        <p class="text-xl font-medium">Contact me!</p>
+
+        <img src="LogoWhatsApp.jpg" alt="WhatsApp" class="w-10 h-10">
+
+        <img src="LogoInstagram.jpg" alt="Instagram" class="w-10 h-10">
+    </footer>
+
+    <div id="photoModal" class="fixed inset-0 bg-black/90 hidden items-center justify-center z-[100] p-4">
+        <div class="relative">
+            <button id="closeModal"
+                class="absolute -top-10 right-0 text-white text-4xl hover:text-gray-400">&times;</button>
+            <img id="modalImage" src="" alt="Fullscreen" class="rounded-lg shadow-2xl border-2 border-white/20" />
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
